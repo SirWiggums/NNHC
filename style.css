@@ -227,7 +227,7 @@ footer button{
 }
 .toggleMenu{
     display: none;
-    color: #000000ab;
+    color: #000000c2;
 }
 
 @media screen and (max-width: 820px) {
