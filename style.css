@@ -2,13 +2,13 @@
 body{
     margin:0;
     font-family: system-ui;
-    background-color: #000000;
-    color:#fff;
+    background-color: #ffffff;
+    color:#ff0000;
 }
 header{
     height:100vh;
-    background-image: url(Anh/9.jpg);
-    background-size: cover;
+    background-image: url(Anh/8.jpg);
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,7 +21,7 @@ header::before{
     left:0;
     bottom:0;
     content: '';
-    background-image: linear-gradient( to top, #000000, transparent);
+    background-image: linear-gradient( to top, #ffffff, transparent);
 }
 header h1{
     position: absolute;
@@ -57,7 +57,10 @@ header h1{
 .menuTop .menu li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black; /* Tăng độ mờ của đường viền màu đen xung quanh chữ */
 }
+
+
 .container{
     width:1200px;
     padding: 20px;
@@ -74,18 +77,20 @@ header h1{
     font-size: large;
     max-width: 500px;
     margin: 10px auto;
-    color:#ffffff4D;
+    color:#000000;
 }
 .transport ul{
     padding: 0;
     list-style: none;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    display: flex;
+    justify-content: center;
     column-gap: 20px;
+
+    
 }
 .transport li{
     text-align: center;
-    color:#ffffff4D;
+    color:#000000;
 }
 .transport li i{
     display: block;
@@ -93,6 +98,11 @@ header h1{
     font-size: xxx-large;
     color:#fff;
 }
+.transport a {
+    color: inherit; /* Kế thừa màu từ phần tử cha */
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
 .zoom{
     transform: scale(1);
     transition: 0.5s;
@@ -212,16 +222,17 @@ footer button{
     display: block;
     padding:20px 0px;
     border-radius: 4px;
-    background-color: #C52515;
+    background-color: #c2c2c2;
     color:#fff;
 }
 .toggleMenu{
     display: none;
+    color: #000000ab;
 }
 
 @media screen and (max-width: 820px) {
     header{
-        height: 50vh;
+        height: 100vh;
     }
     .checkin{
         grid-template-columns: auto auto;
@@ -257,9 +268,6 @@ footer button{
     .transport{
         width:100%;
         overflow: auto;
-    }
-    .transport ul{
-        grid-template-columns:  80px 80px 80px 80px 80px 80px;
     }
     .checkin{
         grid-template-columns: 100%;
