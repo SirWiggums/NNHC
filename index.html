@@ -7,7 +7,15 @@
     <title>Nhà nghỉ Hoa Cúc</title>
     <link rel="icon" href="Anh/M.jpg">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Thêm jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Thêm Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -39,81 +47,85 @@
         <div class="transport">
             <ul>
                 <li>
-                    <a href="tel:+840392340799">
-                        <i class="fa-solid fa-phone fa-shake" style="color: #000000;"></i>
+                    <a href="tel:0392340799">
+                        <i class="fa-solid fa-phone"></i>
                     0392340799
                     </a>
                     
                 </li>
-    
+                
+                <li>
+                    <a href="https://www.facebook.com/nong.cuc.7374">
+                        <i class="fa-brands fa-facebook"></i>
+                        Nong Cuc
+                    </a>
+                </li>
+
                 <li>
                     <a href="mailto:Minh01692340799@gmail.com">
-                        <i class="fa-solid fa-envelope fa-bounce" style="color: #000000;"></i>
+                        <i class="fa-solid fa-envelope"></i>
                         Minh01692340799@gmail.com
                     </a>
                 </li>
-                
-
 
             </ul>
         </div>
 
-    
-        <!-- <div class="bigTitle">
-            <div class="title">
+
+        <div class="bigTitle">
+            <div class="title" id="Album">
                 Album
             </div>
-            <div class="XemAnh">
-                <div id="slide">
-                    <div class="VP" style="background-image: url(Anh/1.jpg);">
-                        <div class="content">
-                            <div class="name">Phòng đơn</div>
-                            <div class="des">150k/1 đêm</div>
-                            <button>See more</button>
-                        </div>
+            <div class="des">
+                Phòng đơn/đôi.
+            </div>
+        </div>
+        <div class="HI">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+        
+                    <div class="slide first">
+                        <img src="Anh/1.jpg" alt="">
                     </div>
-                    <div class="VP" style="background-image: url(Anh/2.jpg);">
-                        <div class="content">
-                            <div class="name">Phòng đơn</div>
-                            <div class="des">150k/1 đêm</div>
-                            <button>See more</button>
-                        </div>
+                    <div class="slide">
+                        <img src="Anh/4.jpg" alt="">
                     </div>
-                    <div class="VP" style="background-image: url(Anh/3.jpg);">
-                        <div class="content">
-                            <div class="name">Phòng đơn</div>
-                            <div class="des">150k/1 đêm</div>
-                            <button>See more</button>
-                        </div>
+                    <div class="slide">
+                        <img src="Anh/5.jpg" alt="">
                     </div>
-                    <div class="VP" style="background-image: url(Anh/4.jpg);">
-                        <div class="content">
-                            <div class="name">Phòng đơn</div>
-                            <div class="des">150k/1 đêm</div>
-                            <button>See more</button>
-                        </div>
+                    <div class="slide">
+                        <img src="Anh/6.jpg" alt="">
                     </div>
-                    <div class="VP" style="background-image: url(Anh/5.jpg);">
-                        <div class="content">
-                            <div class="name">Phòng đôi</div>
-                            <div class="des">200k/1 đêm</div>
-                            <button>See more</button>
-                        </div>
-                    </div>
-                    <div class="VP" style="background-image: url(Anh/6.jpg);">
-                        <div class="content">
-                            <div class="name">Phòng đơn</div>
-                            <div class="des">150k/1 đêm</div>
-                            <button>See more</button>
-                        </div>
+        
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
                     </div>
                 </div>
-                <div class="buttons">
-                    <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
-                    <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
-            </div> -->
-
+            </div>
+        </div>
+        <div class="bigTitle">
+            <div class="title" id="lien-he">
+                Địa chỉ
+            </div>
+            <div class="des">
+                Liện hệ đặt phòng qua các ứng dụng sau
+            </div>
+        </div>
+        
 
         <div class="bigTitle">
             <div class="title" id="location">
@@ -192,59 +204,6 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- <div class="bigTitle">
-            <div class="title">
-                Fare
-            </div>
-            <div class="des">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Deserunt nostrum consectetur laborum voluptatum 
-                dolores provident iste consequatur ea est. Tempore.
-            </div>
-        </div>
-
-        <div class="fare">
-            <div class="item zoom">
-                <i class="fa-solid fa-money-bill"></i>
-                <div class="price">$20.63</div>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-            </div>
-
-            <div class="item zoom">
-                <i class="fa-solid fa-money-bill-1"></i>
-                <div class="price">$27.63</div>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-            </div>
-
-            <div class="item zoom">
-                <i class="fa-regular fa-money-bill-1"></i>
-                <div class="price">$57.63</div>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-            </div>
-
-
-        </div> -->
-
 
     </div>
     <footer>
