@@ -57,7 +57,7 @@ header h1{
 .menuTop .menu li a{
     font-size: 20px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(8, 8, 8);
     text-shadow: -1px 0 10px yellow, 0 1px 10px yellow, 1px 0 10px yellow, 0 -1px 10px yellow; /* Tăng độ mờ của đường viền màu đen xung quanh chữ */
 }
 
